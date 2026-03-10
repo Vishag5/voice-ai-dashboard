@@ -113,7 +113,7 @@ function startAnimation(bars) {
             bar.style.height = `${h}%`;
             bar.style.transition = 'height 0.2s ease-in-out';
         });
-    }, 200);
+    }, 100);
 }
 
 function stopAnimation() {
@@ -135,7 +135,7 @@ document.getElementById('submit-task')?.addEventListener('click', () => {
 
         // Return to dashboard
         document.querySelector('[data-view="dashboard"]').click();
-    }, 1500);
+    }, 600);
 });
 
 // QA & Video Interactions
@@ -160,7 +160,7 @@ document.querySelectorAll('.qa-btn').forEach(btn => {
                 btn.closest('.card').style.pointerEvents = 'auto';
             }
             document.querySelector('[data-view="dashboard"]').click();
-        }, 1000);
+        }, 400);
     });
 });
 
